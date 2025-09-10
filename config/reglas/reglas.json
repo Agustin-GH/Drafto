@@ -1,0 +1,22 @@
+{
+  "_proposito": "Reglas basicas (tablero, reglas y puntuacion). Todos los tokens estan en español.",
+  "especies": ["Azul", "Cyan", "Naranja", "Rojo", "Rosado", "Verde"],
+  "tablero": [
+    { "campoId": "manada_pasto_sup",     "nombre": "Manada (pasto superior)",     "tipo": "manada",     "tamano": 6,  "lado": "pasto"  },
+    { "campoId": "diversidad_pasto_med", "nombre": "Diversidad (pasto medio)",    "tipo": "diversidad", "tamano": 6,  "lado": "pasto"  },
+    { "campoId": "solitario_pasto_inf",  "nombre": "Solitario (pasto inferior)",  "tipo": "solitario",  "tamano": 1,  "lado": "pasto"  },
+    { "campoId": "manada_roca_sup",      "nombre": "Manada (roca superior)",      "tipo": "manada",     "tamano": 6,  "lado": "roca"   },
+    { "campoId": "diversidad_roca_med",  "nombre": "Diversidad (roca medio)",     "tipo": "diversidad", "tamano": 6,  "lado": "roca"   },
+    { "campoId": "libre_roca_inf",       "nombre": "Libre (roca inferior)",       "tipo": "libre",      "tamano": 6,  "lado": "roca"   },
+    { "campoId": "rio",                  "nombre": "Rio",                          "tipo": "rio",        "tamano": 12, "lado": "centro" }
+  ],
+  "puntuacion": {
+    "manada":      { "porCantidad": [0, 1, 3, 6, 10, 15, 21] },
+    "diversidad":  { "porCantidad": [0, 0, 3, 6, 10, 15, 21] },
+    "solitario":   { "puntosSiUnico": 7 },
+    "libre":       { "porCantidad": [0, 1, 2, 4, 6, 8, 10] },
+    "rio":         { "porDino": 1 },
+    "bonoTRex":    { "porTRex": 1 },
+    "especieDesempate": "Rojo"
+  }
+}

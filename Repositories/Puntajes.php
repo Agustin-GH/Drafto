@@ -1,0 +1,2 @@
+<?php
+// upsertScore, getByGame, getByGameAndSeat.
