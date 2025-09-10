@@ -5,7 +5,7 @@ session_start();
 $request = $_SERVER['REQUEST_URI'];
 $request = strtok($request, '?');
 
-$basePath = '/Draftosaurus'; 
+$basePath = '/Drafto'; 
 if (strpos($request, $basePath) === 0) {
     $request = substr($request, strlen($basePath));
 }
